@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,6 +14,7 @@
     font-family: "Itallic";
     font-size: 22px;
 }
+
 #headline1 {
     color: black;
     font-family: "Roboto";
@@ -89,8 +90,10 @@
 
 .aboutMe-section{
     background-color: #36476f;
-    height:100vh;
-    padding-top: 100px;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .aboutMe-section-title {
@@ -104,10 +107,15 @@
     text-align: justify;
 }
 
+.tech {
+    color: #ffffff;
+    font-size: 16px;
+}
+
 .Technology-language {
     color: #ffffff;
     font-size: 14px;
-    border: whitesmoke solid 2px;
+    border: lightgreen solid 2px;
     height: 35px;
     padding: 10px;
     width: fit-content;
@@ -117,20 +125,21 @@
     justify-content: center;
     margin: 10px; 
     border-radius: 8px;
+    border-left: lightgreen solid 5px;
 }
 
 .Technology-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; 
-    padding-left: 40%;
     padding-top: 2%;
+    padding-left: 40%;
 }
- 
+
+
 .project-section {
     background-color: #d0b200;
 }
+
 .project-section-container {
     height: 300px;
     width: 360px;
@@ -205,4 +214,28 @@ input, textarea {
     background-color: whitesmoke;
     border: lightgray solid 2px;
 }
+
+@media screen and (max-width: 767px) {
+    input, textarea {
+        width: 350px;
+    }
+
+    .aboutMe-section-description {
+        overflow-y: auto;
+        height: 40vh;
+     }
+
+     .tech  {
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+   }
+
+   .Technology-container {
+    padding-left: 0px;
+    padding-top: 10px;
+   }
+
+}
+
 
